@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="rules" class="rules">
+      <ol>
+        <h2>Regeln</h2>
+        <li>Es sind 6 Bilder unten zu sehen. Davon fehlt immer eins.</li>
+        <li>Du musst so schnell wie möglich auf das fehlende Bild Clicken.</li>
+        <li>Wählst du das Falsche aus erhälst du eine 3 Sekunden sperre.</li>
+        <li>Es werden 5 Runden gespielt</li>
+      </ol>
+        <button id="close-btn" onclick="setRandomImages()">Start</button>
+    </div>
+
+
+    <div id="game-field">
+
+
+        <div id="numbers">
+
+            <div class="stopwatch">
+                <p id="timer">0.000 s</p>
+                <p id="result"></p>
+            <p>Runde: <span id="score">0</span></p>
+            <p id="winMessage">Herzlichen Glückwunsch! Du hast 10 Punkte erreicht! 🎉</p>
+            </div>
+
+        </div>
+
+
+        <div id="random">
+            <div id="imageContainer1">
+                
+            </div>
+
+            <div id="imageContainer2">
+                
+            </div>
+            <div id="imageContainer3">
+                
+            </div>
+            <div id="imageContainer4">
+                
+            </div>
+            <div id="imageContainer5">
+                
+            </div>
+            <div id="imageContainer6">
+                
+            </div>
+        </div>
+
+        <div id="vorlagen">
+            <div id="img1" class="bilder" onclick="selectImage(this)">
+                <img src="/Enton.png">
+            </div>
+            <div id="img2"class="bilder" onclick="selectImage(this)">
+                <img src="/gengar.png">
+            </div>
+            <div id="img3"class="bilder" onclick="selectImage(this)">
+                <img src="/pikatchu.png">
+            </div>
+            <div id="img4"class="bilder" onclick="selectImage(this)">
+                <img src="/pumeluff.png">
+            </div>
+            <div id="img5"class="bilder" onclick="selectImage(this)">
+                <img src="/relaxo.png">
+            </div>
+            <div id="img6"class="bilder" onclick="selectImage(this)">
+                <img src="/shiggy.png">
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay">3</div>
+
+   
+
+    <script src="java.js"></script>
+</body>
+</html>
